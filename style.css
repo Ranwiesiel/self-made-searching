@@ -7,7 +7,8 @@
 body {
     background-image: url(background\ img.jpeg);
     background-size: cover;
-    background-repeat: no-repeat    ;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 #container-bar {
@@ -49,10 +50,15 @@ body {
     text-align: center;
 }
 
+#container-search .input.button[type=button]::-webkit-input-placeholder {
+    font-family: Arial, Helvetica, sans-serif
+}
+
 @media screen and (max-width: 450px) {
     body{
         background-image: url(anime.jpeg);
-        background-size: cover;
+        background-size: 110%;
+        height: auto;
     }
 
     #container-bar {
